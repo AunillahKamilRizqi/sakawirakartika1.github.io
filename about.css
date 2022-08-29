@@ -5,10 +5,11 @@
 
 body{
     font-family: 'poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 nav {
-/*  position: fixed;*/
+    position: fixed;
     display: flex;
     background-color: #212529;
     justify-content: space-around;
@@ -20,7 +21,7 @@ nav {
     z-index: 1;
 }
 nav .logo {
-    font-family: 'Pacifico', cursive;
+    font-family: 'montserrat', sans-serif;
     letter-spacing: 3px;
 }
 
@@ -28,7 +29,7 @@ nav ul {
     display: flex;
     list-style: none;
     width: 40%;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 nav ul li a {
     color: rgb(162, 255, 235);
@@ -83,6 +84,7 @@ nav ul li a:active {
     transform: rotate(-45deg) translate(-1px, 0);
 }
 .menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
     transform: scale(0);
 }
 
@@ -145,35 +147,37 @@ footer{
     padding: 0 2px;
 }
 
-.left .content .social a span{
+.left .content .social a i{
+    margin-left: 10px;
     height: 40px;
     width: 40px;
     background: #1a1a1a;
     line-height: 40px;
     text-align: center;
-    font-size: 18px;
+    font-size: 25px;
     border-radius: 5px;
     transition: 0.3s;
 }
 
-.left .content .social a span:hover{
+.left .content .social a i:hover{
     background: #f12020;
 }
 
-.center .content .fas{
+.center .content .bi{
     font-size: 1.4375rem;
     color: white;
     background: #1a1a1a;
     height: 45px;
     width: 45px;
+    font-size: 30px;
     line-height: 45px;
     text-align: center;
-    border-radius: 50%;
+    border-radius: 5px;
     transition: 0.3s;
     cursor: pointer;
 }
 
-.center .content .fas:hover{
+.center .content .bi:hover{
     background: #f12020;
 }
 
@@ -231,7 +235,6 @@ footer{
     cursor: pointer;
     transition: .3s;
 }
-
 .right form .btn button:hover{
     background: #000;
 }
@@ -255,20 +258,6 @@ footer{
     text-decoration: underline;
 }
 
-/* @media screen and (max-width: 900px) {
-    footer{
-    position: relative;
-    bottom: 0px;
-    }
-    .main-content{
-    flex-wrap: wrap;
-    flex-direction: column;
-    }
-    .main-content .box{
-    margin: 5px 0;
-    }
-} */
-
 @media screen and (max-width: 768px) {
     nav ul {
     width: 50%;
@@ -281,10 +270,12 @@ footer{
     }
 
     nav ul {
+    z-index: -1;
+    justify-content: space-evenly;
     position: absolute;
     right: 0;
     top: 0;
-    width: 80%;
+    width: 50%;
     height: 100vh;
     flex-direction: column;
     align-items: center;

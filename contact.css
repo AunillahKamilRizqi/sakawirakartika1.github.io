@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  
 }
 
 body{
@@ -22,7 +22,7 @@ nav {
   z-index: 1;
 }
 nav .logo {
-  font-family: 'Pacifico', cursive;
+  font-family: 'montserrat', sans-serif;
   letter-spacing: 3px;
 }
 
@@ -85,6 +85,7 @@ nav ul li a:active {
   transform: rotate(-45deg) translate(-1px, 0);
 }
 .menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
   transform: scale(0);
 }
 
@@ -199,10 +200,12 @@ nav ul li a:active {
   }
 
   nav ul {
+    z-index: -1;
+    justify-content: space-evenly;
     position: absolute;
     right: 0;
     top: 0;
-    width: 80%;
+    width: 50%;
     height: 100vh;
     flex-direction: column;
     align-items: center;
