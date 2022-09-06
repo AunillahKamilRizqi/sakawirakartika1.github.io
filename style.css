@@ -4,7 +4,6 @@
 }
 
 body{
-    font-family: 'poppins', sans-serif;
     overflow-x: hidden;
 }
 
@@ -15,10 +14,10 @@ nav {
     justify-content: space-around;
   /* padding: 20px 0; */
     color: white;
-    height: 60px;
+    height: 50px;
     width: 100%;
     align-items: center;
-    z-index: 5;
+    z-index: 2;
 }
 nav .logo {
     font-family: 'montserrat', serif;
