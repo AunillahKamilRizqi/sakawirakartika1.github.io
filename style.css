@@ -21,7 +21,7 @@ nav {
     z-index: 5;
 }
 nav .logo {
-    font-family: 'montserrat', sans-serif;
+    font-family: 'montserrat', serif;
     letter-spacing: 3px;
 }
 
@@ -89,6 +89,25 @@ nav ul li a:active {
     transform: scale(0);
 }
 
+section img{
+    margin-top: 40px;
+}
+
+.tombol button{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: large;
+    background-color: rgb(229, 224, 223 );
+    border: none;
+    margin-left: 30%;
+    margin-top: 10px;
+    text-align: center;
+    width: 40%;
+    height: 50px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 /* section{
     background-image: url(images/home.jpg);
     background-position: center;
@@ -98,11 +117,11 @@ nav ul li a:active {
     display: flex;
 } */
 
-section img{
+/* section img{
     margin-top: 4%;
     width: 203vh;
     height: 90vh;
-}
+} */
 
 
 /* section h1{
@@ -441,7 +460,7 @@ footer{
     }
 
     .logo h4{
-        font-size: 12.1px;
+        font-size: 11px;
     }
 
 
@@ -467,8 +486,9 @@ nav ul.slide {
     transform: translateX(0);
 }
 
-section img{
-    width: 75vh;
+section{
+    align-items: center;
+    justify-content: center;
 }
 
 footer{
